@@ -1,0 +1,50 @@
+.container{
+    background-color: #ffcad4;
+    height: 100%;
+    width: 50%;
+}
+
+.image__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.chevron__image{
+    height: 10em;
+}
+
+.imgCont{
+    position: relative;
+    height: 3em;
+    width: 3em;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+.social__container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social__container a{
+    margin: 1em 0;
+    padding: 1em;
+}
+
+.imgCont img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 768px){
+    .social__container{
+        display: flex;
+        flex-direction: column;
+        height: 50px;
+    }
+}

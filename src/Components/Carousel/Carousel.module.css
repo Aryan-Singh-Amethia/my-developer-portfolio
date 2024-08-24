@@ -1,0 +1,46 @@
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-60%);
+    }
+    
+}
+
+@keyframes slide-2 {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+    
+}
+
+.carousel {
+    margin: 5em 0;
+}
+
+.carousel__logos{
+    overflow: hidden;
+    text-wrap: nowrap;
+    display: inline-block;
+    animation: 30s slide infinite linear;
+    padding: 0 50px;
+}
+
+.carousel__logos img{
+    width: 150px;
+    height: 150px;
+    margin: 0 30px;
+}
+
+.reverse__animation{
+    animation: 30s slide-2 infinite linear;
+}
+
+.carousel__logos:hover{
+    animation-play-state: paused;
+}
+

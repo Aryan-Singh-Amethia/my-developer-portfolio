@@ -1,0 +1,49 @@
+.newhero_frame{
+    background-color: white;
+    border-radius: 5%;
+    width: 30vw ;
+    height: 40vw;
+    position: relative;
+    margin: 2.7em 0 0 1em;
+    padding: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.9); 
+    z-index: 3;
+}
+
+.newhero_image{
+    position: absolute;
+    width: 100%;
+    height: 95%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+@media(max-width:1183px){
+    .newhero_container{
+        height: 45vh;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        background: #5C258D;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #4389A2, #5C258D);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #4389A2, #5C258D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+        border-radius: 28% 48% 75% 24% / 0% 25% 31% 74%;
+    }
+    .newhero_frame{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        /* box-shadow: none; */
+    }
+    .newhero_image{
+        border-radius: 50%;
+        scale:1.2;
+        width: 85%;
+        height: 85%;
+    }
+  }
+

@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Merriweather+Sans:ital,wght@1,800&family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.navbar_container {
+  height: 8vh;
+  width: 100%;
+  background-image: linear-gradient(to right,#642b73,#c6426e);
+  padding: 0;
+  border: none;
+}
+
+.navbar_main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  border: none;
+}
+
+.navbar_drawer {
+  display: none;
+}
+
+.navbar_options {
+  color: #d8d8d8;
+  font-family: "Montserrat", sans-serif;
+  align-content: center;
+  font-size: larger;
+}
+
+.navbar_options:hover{
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.navbar_options_container {
+  width: 55%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-left: 5em;
+  flex: 1;
+}
+
+.navbar_signature_icon{
+  margin: 0 0 0 8.5em;
+}
+
+.navbar_socials_container{
+    margin : 0 5em 0 0;
+    padding-left: 3em;
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+    cursor: pointer;
+    flex: 1;
+}
+
+.navbar_option{
+  text-decoration: none !important;
+}
+
+.navbar_social_container{
+    border-radius: 50%;
+    position: relative;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 0 1em;
+}
+
+.navbar_social_container:hover{
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.navbar_social_image{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width:1183px) {
+  .mweb__navbar-container {
+    height: 8vh;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.5em 0;
+    z-index: 9;
+  }
+  .mweb__navbar-icon{
+    height: 50px;
+    width: 50px;
+    background-color: #000;
+    position: relative;
+  }
+   
+  .mweb__navbar-icon .mweb__icon {
+    position: absolute;
+    top: 1.5em;
+    left: 1.5em;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .mweb__navbar-icon a {
+    position: relative;
+  }
+  .mweb__navbar-icon a svg {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+  }
+  .mweb__header{
+    height: 60px;
+    display: flex;
+    padding: 5px 0 0 5px;
+    justify-content: flex-start;
+    background-color: #000;
+    position: sticky;
+    z-index: 9999;
+    top:0;
+  }
+}

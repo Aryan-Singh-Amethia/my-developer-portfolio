@@ -1,0 +1,137 @@
+.tl__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 10px; */
+    /* border: 2px solid whitesmoke; */
+    min-height: 85vh;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 100px;
+}
+
+.tl__block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.tl__line{
+    min-height: 450px;
+    width: 0;
+    border: 2px solid white;
+}
+
+.tl_round{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tl__card-right{
+    min-width: 40vw;
+    min-height: 40vh;
+    height: fit-content;
+    border: none;
+    position: absolute;
+    left: 100px;
+    top: 0px;
+    border-radius: 15px;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tl__card-left{
+    min-width: 40vw;
+    min-height: 40vh;
+    height: fit-content;
+    border: none;     
+    position: absolute;
+    right: 100px;
+    top: 0px;
+    border-radius: 15px;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tl__card-center{
+    min-width: 40vw;
+    min-height: 40vh;
+    height: fit-content;
+    border: none;     
+    border-radius: 15px;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+}
+
+.tl__card{
+    background-color: white;
+}
+
+.card__title{
+    margin: 0.5em 0;
+    color: white;
+}
+
+.card__container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: black;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.card__container h2{
+    margin-left: 15px;
+}
+
+.orglogo{
+  position: relative;
+  min-width: 4em;
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+}
+
+.orglogo img{
+    border-radius: 50%;
+  }
+
+.card__details{
+    padding: 1.5em;
+}
+
+.card_details p{
+    font-style: italic;
+}
+
+.card__role{
+    margin: 1em 0;
+}
+
+.card__role p{
+    font-size: large;
+    font-weight: 700;
+}
+
+@media (max-width: 1183px) {
+    .tl__container{
+        margin-top: 10px !important;
+    }
+    .tl__line{
+        min-height: 100px;
+    }
+    .tl__card-center{
+        width: 100%;
+    }
+}
