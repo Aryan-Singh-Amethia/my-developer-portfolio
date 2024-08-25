@@ -1,12 +1,16 @@
 import { useEffect } from "react";
 import styles from "./rotatingLogo.module.css";
+import { useNavigate } from "react-router-dom";
 
 const RotatingLogo = ()=>{
 
     const myIntro = 'UI/UX | Web Frontend . Full-Stack Dev ';
-
+    const navigate = useNavigate();
    return(
-    <div className={styles.body}>
+    <div className={styles.body} 
+          onClick={() =>{
+            window.location.href = "mailto:aryanamethia1998@gmail.com";
+          }}>
       <div className={styles.circle}>
         <div className={styles.innerCta}>Hire Me</div>
         <div className={styles.text}>
