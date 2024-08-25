@@ -3,10 +3,12 @@ import classes from "./navbar.module.css";
 import { useMediaQuery } from "react-responsive";
 import { SOCIAL_PROFILES } from "../../Constants/constant";
 import DrawerLayout from "../DrawerLayout";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 1183px)' });
   const [ showHamburger, setShowHamburger ] = React.useState(false);
+  const currentUrl = useLocation().pathname;
   return isMobile ? (
     <Fragment>
     <div className={classes["mweb__header"]}>
@@ -49,10 +51,10 @@ const Navbar = () => {
     (<header className={classes.navbar_container}>
       <nav className={classes.navbar_main}>
         <div className={classes.navbar_options_container}>
-          <a href="/" className={classes.navbar_option}> <h2 className={classes.navbar_options}>Home</h2></a>
-          <a href="/about" className={classes.navbar_option}><h2 className={classes.navbar_options}>About</h2></a>
-          <a href="/projects" className={classes.navbar_option}><h2 className={classes.navbar_options}>Projects</h2></a>
-          <a href="/skills" className={classes.navbar_option}><h2 className={classes.navbar_options}>Skills</h2></a>
+          <a href="/" className={classes.navbar_option}> <h2 className={`${classes.navbar_options} ${currentUrl === "/" ? classes.navbar_active : ""}`}>Home</h2></a>
+          <a href="/about" className={classes.navbar_option}><h2 className={`${classes.navbar_options} ${currentUrl === "/about" ? classes.navbar_active : ""}`}>About</h2></a>
+          <a href="/projects" className={classes.navbar_option}><h2 className={`${classes.navbar_options} ${currentUrl === "/projects" ? classes.navbar_active : ""}`}>Projects</h2></a>
+          <a href="/skills" className={classes.navbar_option}><h2 className={`${classes.navbar_options} ${currentUrl === "/skills" ? classes.navbar_active : ""}`}>Skills</h2></a>
         </div>
         <div className={classes.navbar_signature_icon}>
           <svg width='100' height='100'>

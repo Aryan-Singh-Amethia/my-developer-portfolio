@@ -124,6 +124,10 @@
     font-weight: 700;
 }
 
+.section{
+    overflow: scroll;
+}
+
 @media (max-width: 1183px) {
     .tl__container{
         margin-top: 10px !important;

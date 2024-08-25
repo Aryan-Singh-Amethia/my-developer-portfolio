@@ -63,7 +63,7 @@ export const EXPERIENCES = {
       },
       {
         title:"Fullstack Developer Intern",
-        description: "Underwent a three month internship aimed at developing a B2B full stack Application for Invoice Management and Date prediction uaing Python,Machine Learning,JAVA,Servlets,JDBC,MySql,JavaScript,React"
+        description: "Underwent a three month internship aimed at developing a B2B full stack Application for Invoice Management and Date prediction uaing Python,Machine Learning , JAVA , Servlets , JDBC , MySql , JavaScript, React"
       }
     ]
   },

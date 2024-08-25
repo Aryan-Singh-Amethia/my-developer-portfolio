@@ -34,6 +34,13 @@
     font-weight: bolder;
 }
 
+.navbar_active {
+  color: white;
+  font-weight: bolder;
+  cursor: initial;
+  text-decoration: underline;
+}
+
 .navbar_options_container {
   width: 55%;
   display: flex;

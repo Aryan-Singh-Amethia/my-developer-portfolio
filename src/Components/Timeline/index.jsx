@@ -130,7 +130,7 @@ Timeline.Card = (props) =>{
                 {experiences?.roles.map((role,index) => (
                 <li key={index} className={styles.card__role}>
                     <p>{role?.title}</p>
-                    <section>{role?.description}</section>
+                    <section className={styles.section}>{role?.description}</section>
                 </li>
                 ))}
              </ul>
