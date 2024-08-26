@@ -1,10 +1,12 @@
 import withLayout from "../../Layout/layout";
 import styles from "./Projects.module.css";
 import { PROJECTS } from "../../Constants/project-constants";
+import Header from "../Header/Header";
 
 const Projects = () =>{
     return(
         <div className={styles["projects__container"]}>
+            <Header heading="Projects"/>
             {
              PROJECTS.map((project,index) => (
                 <Projects.Card

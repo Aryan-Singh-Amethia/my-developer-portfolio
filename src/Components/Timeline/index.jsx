@@ -1,13 +1,16 @@
 import { EXPERIENCES, TIMELINE_CARD_LEFT, TIMELINE_CARD_RIGHT } from "../../Constants/constant";
 import withLayout from "../../Layout/layout";
+import Header from "../Header/Header";
 import styles from './Timeline.module.css';
 import { useMediaQuery } from 'react-responsive';
 
 function Timeline(){
     const isMobile = useMediaQuery({ query: '(max-width: 1183px)'});
     return (
-        isMobile?
-     <div className={styles.tl__container}>
+        isMobile? (
+            <>
+            <Header heading="Experience"/>
+                 <div className={styles.tl__container}>
         <Timeline.SpanBlockMobile 
              type={TIMELINE_CARD_RIGHT} 
              iconPath={'/bag.svg'}
@@ -38,8 +41,13 @@ function Timeline(){
              experiences={EXPERIENCES.KIIT}
              background="linear-gradient(to top, #f77062 0%, #fe5196 100%)"
              />                  
-     </div>    
-    :(<div className={styles.tl__container}>
+     </div>  
+            </>
+        )  
+    :(
+    <>
+        <div className={styles.tl__container}>
+        <Header heading="Experience"/>
        <Timeline.SpanBlock 
              type={TIMELINE_CARD_RIGHT} 
              iconPath={'/bag.svg'}
@@ -70,7 +78,9 @@ function Timeline(){
              experiences={EXPERIENCES.KIIT}
              background="linear-gradient(to top, #f77062 0%, #fe5196 100%)"
              />
-    </div>)
+    </div>
+    </>
+    )
 );
 }
 

@@ -51,7 +51,7 @@ export const PROJECTS = [
     {
         id : 1009,
         title : "A B2B Full Stack Invoice Management Application",
-        description : "Underwent a three month internship aimed at developing a B2B full stack Application for Invoice Management and Date prediction using Python,Machine Learning,JAVA,Servlets,JDBC,MySql,JavaScript,React",
+        description : "Underwent a three month internship aimed at developing a B2B full stack Application for Invoice Management and Date prediction using Python, Machine Learning, JAVA, Servlets, JDBC, MySql, JavaScript, React",
         src : "/invoice.jpg",
         href : "https://github.com/Aryan-Singh-Amethia/Summer-Internship-2021-Projects"
     },
