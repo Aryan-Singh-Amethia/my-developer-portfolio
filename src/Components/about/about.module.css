@@ -80,3 +80,17 @@
 .about_contact-mob{
     margin-bottom: 3em;
 }
+
+.about_resume_mob{
+    color: whitesmoke;
+    background-color: black;
+    border: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    /* padding: 0.6em 1.8em; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5em;
+    cursor: pointer;
+}

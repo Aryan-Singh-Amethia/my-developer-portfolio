@@ -78,3 +78,5 @@ export const EXPERIENCES = {
     ]
   }
 }
+
+export const MY_RESUME_LINK = "https://drive.google.com/file/d/1WcuQr3uU4N6E9ty8-YNW10fPxmtpTfca/view?usp=sharing";
